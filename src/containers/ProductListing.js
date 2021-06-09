@@ -9,7 +9,7 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://fakestoreapi.com/products")
+      .get("https://fakestoreapi.com/products/categories")
       .catch((err) => {
         console.log("Err: ", err);
       });
